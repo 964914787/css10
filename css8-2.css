@@ -1,0 +1,320 @@
+html{
+    height: 100%;
+    font-size: 62.5%
+}
+body {
+    background: #fafafa;
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color:white;
+}
+a:hover {
+    text-decoration: none;
+    color:white;
+}
+/*通用部分*/
+.box-flex {
+    display: flex;
+}
+/*以下页眉部分*/
+header {
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18.7%;
+    background: #ffffff;
+}
+/*电话*/
+header .telephone {
+    font-size: 1.4rem;
+    color: #56bc8e;
+}
+/*三图标*/
+header .bg-weixin {
+    width: 25px; height: 24px;
+    background: url('css_sprites8-2.png') -227px -152px;
+}
+header .bg-qq {
+    width: 25px; height: 24px;
+    background: url('css_sprites8-2.png') -137px -152px;
+    margin-left: 1.7rem;
+}
+header .bg-weibo {
+    width: 25px; height: 24px;
+    background: url('css_sprites8-2.png') -182px -152px;
+    margin-left: 1.7rem;
+}
+/*超小设备电话消失*/
+@media all and (max-width: 768px){
+    header {justify-content: flex-end}
+    .telephone {display: none}
+}
+/*导航栏部分*/
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #29b078;
+}
+/*技能书logo*/
+.bg-logo {
+    width: 107px; height: 49px;
+    background: url('css_sprites8-2.png') -10px -152px;
+    margin:0 0 0 18.7%;
+}
+/*首页框*/
+.navigation .box-container {
+    display: flex;
+    margin: 0 15.5% 0 0;
+}
+.navigation .box {
+    width: 10rem;
+    height: 10rem;
+}
+.navigation .box .box-word {
+    width: 10rem;
+    height: 9.6rem;
+    font-size: 1.6rem;
+    color: #fff;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+.navigation .box .box-border {
+     background: #fff;
+     height: 0.4rem;
+     width: 10rem;
+     display: none;
+}
+ /*悬浮显示下边框*/
+.box:hover .box-border{
+    display: block;
+}
+/*大小设备边距变换*/
+@media all and (max-width: 1200px){
+    .bg-logo {margin: 0 0 0 5%}
+    .navigation .box-container {margin: 0 5% 0 0}
+}
+@media all and (max-width: 768px){
+    .navigation .box-container {display: none}
+}
+/*导航按钮*/
+.navigation-button {
+    margin: 1rem 2rem;
+    display: none;
+}
+@media all and (max-width: 768px){
+    .navigation-button {display: block;}
+}
+/*下拉框*/
+.column {
+    display: none;
+    text-decoration: none;
+    width: 100%;
+    margin: 1rem 0;
+    line-height: 50px;
+    font-size: 1.6rem;
+    text-align: center;
+    color: white;
+    background-color: #29b078;
+    padding: 0;
+}
+ /*悬浮li有反应*/
+ .column-sm:hover{
+    background: #47d197;;
+}
+@media all and (max-width: 768px){
+    .navigation {flex-wrap: wrap}
+    input[type=checkbox]:checked~ .column{
+        display: block;
+    }
+}
+@media all and (min-width: 768px){
+    input[type=checkbox]:checked~ .column{
+        display: none;}
+
+}
+/*合作企业顺序部分*/
+.order {
+     display: flex;
+     align-items: center;
+     margin: auto 18.7%;
+     color: black;
+     font-size: 1.6rem;
+     height: 7.9rem;
+ }
+.order>span {
+    color: #3fb582;
+}
+
+@media all and (max-width: 768px){
+    .order {margin: auto 5%}
+}
+/*中间内容大框*/
+.lntermediate-content {
+    display: flex;
+    align-items: flex-start;
+}
+/*合作企业框*/
+.cooperation-frame {
+    margin: 0 5%;
+    background: #fff;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    margin-bottom: 5rem;
+}
+.cooperation-frame-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6.2rem;
+    color: black;
+    font-size: 1.7rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+/*列表*/
+.cooperation-frame-list {
+    display: flex;
+    align-items: center;
+    color: #74c5a0;
+    margin: 2.8rem 0 2.8rem 39%;
+}
+.cooperation-frame-dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    border: 1px solid #ff650e;
+    margin: 0 0.5rem 0 0;
+}
+/*悬浮变色*/
+.cooperation-frame-list:hover {
+    color: #ff650e;
+}
+.cooperation-frame-list:hover .cooperation-frame-dot{
+    background: #f9a372;
+}
+/*大分辨率布局*/
+@media (min-width: 768px) {
+    .cooperation-frame {
+        width: 15.83%;
+        margin-right: 0;
+    }
+}
+/*介绍框*/
+.introduce-frame {
+    margin: auto 5%;
+    background: #fff;
+    border: 1px solid #ededed;
+    border-radius: 10px;
+}
+.introduce-frame-title {
+    display: flex;
+    align-items: center;
+    color: #a0a0a0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+.bg-tudouwang {
+    flex: 0 0 auto;
+    width: 134px; height: 122px;
+    background: url('css_sprites8-2.png') -10px -10px;
+    margin:0 3rem;
+}
+.introduce-frame-title>p {
+    margin: 2.5rem 6.4rem 2.5rem 0;
+    line-height: 2.5rem;
+}
+.introduce-frame>p {
+    margin: 3.9rem 6.8rem;
+    font-size: 1.4rem;
+    color: #a0a0a0;
+    line-height: 2.5rem;
+    text-indent:2em;
+}
+/*介绍框大分辨率布局*/
+@media all and (min-width: 768px){
+    .introduce-frame {width: 45.3%;
+        flex: 1 0 auto;
+        margin-left: 2.6rem;
+        margin-bottom: 23rem
+    }
+}
+@media all and (min-width: 1200px) {
+    .introduce-frame {
+        flex: 0 0 auto;
+    }
+    .cooperation-frame {
+        margin-left: 18%;
+    }
+}
+@media all and (max-width: 768px){
+    .lntermediate-content {
+        flex-wrap: wrap;
+    }
+    .cooperation-frame {
+        width: 100%;
+    }
+    .introduce-frame {
+        width: 100%;
+    }
+}
+/*页尾部分*/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: #26a26f;
+}
+.footer-box {
+    width: 33.33%;
+    height: 10rem;
+    margin: 3.7rem 0;
+    padding-left: 18%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.footer-box1{
+    width: 33.33%;
+    margin: 3.7rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.footer-box2{
+    width: 33.33%;
+    margin: 3.7rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.footer-box3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+    color: #f5f9f7;
+    border-top: 1px solid #32c086;
+}
+ .bg-erweima {
+     width: 92px; height: 92px;
+     background: url('css_sprites8-2.png') -164px -10px;
+ }
+
+
+
+
