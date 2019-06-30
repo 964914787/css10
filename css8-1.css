@@ -186,8 +186,10 @@ header .bg-weibo {
     .brief-introduction {flex-flow: row wrap;
     margin-top: 0}
     .bg-xuxian {display: none}
-    .brief-box {margin-top: 5rem}
-    .box-user {margin-top: 5rem}
+    .brief-box {margin-top: 5rem;
+    flex: 1 0 100%}
+    .box-user {margin-top: 5rem;
+    }
 }
 /*高效框*/
 .box-user {
@@ -212,9 +214,7 @@ header .bg-weibo {
 .order {
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
     align-items: center;
-
     width: 100%;
     font-size: 1.4rem;
     color: #a8a8a8;
@@ -251,8 +251,11 @@ header .bg-weibo {
     display: flex;
     align-items: center;
 }
-@media all  and (max-width: 633px){
-    .order {justify-content: flex-start}
+@media all  and (max-width: 1400px){
+    .order {flex-direction: column}
+    .order-box {margin: 1rem 0;}
+    .order-box1 {width: 30.7rem;
+        margin: 1rem 0;}
 }
 .title1 {
     display: flex;
@@ -263,31 +266,41 @@ header .bg-weibo {
     color: black;
     padding-top: 2.5rem;
 }
+/*优秀学员展示*/
 .lntroduction-column {
     margin-bottom: 2.5rem;
-    width: 100%;
+    padding: 0 11%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .lntroduction-box {
-    width: 27rem;
-    height: 36.9rem;
+    flex: 0 0 auto;
+    width: 20%;
+    padding: 1rem;
     background: white;
     border: 1px solid #eeeded;
+    min-height: 36.9rem;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 2rem;
+    box-sizing: border-box;
+
 }
 /*介绍框*/
+@media all and (max-width: 1450px) {
+    .lntroduction-box {width: 40%;
+    margin-top: 2rem}
+}
 @media all and (max-width: 768px){
     .lntroduction-column {
         flex-direction: column;
         align-items: center
     }
-    .lntroduction-box {margin: 2rem 0}
+    .lntroduction-box {width: 60%;}
 }
 .lntroduction-word {
     font-size: 1.8rem;
@@ -365,15 +378,9 @@ header .bg-weibo {
     justify-content: center;
     align-items: center;
 }
-.enterprise-logo-shadow {
-    width: 24.8rem;
-    height: 14.4rem;
-    background: #ffffff;
+.enterprise-logo:hover {
+    box-shadow: darkgrey 0px 0px 10px 1px;
     z-index: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: darkgrey 0px 0px 10px 1px
 }
 .enterprise {
     display: flex;
@@ -425,25 +432,31 @@ header .bg-weibo {
     margin-right: 1.1rem;
 }
 .link-box1 {
+    margin: 0 18.7%;
     display: flex;
     justify-content: center;
+    margin-bottom: 0.3rem;
 }
 .link-word1 {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: center;
-
-    max-width: 10%;
-    margin-right: 5rem;
+    width: 10%;
     font-size: 1.4rem;
     color: #9999;
+}
+.link-word1:hover {
+    border-bottom: 1px solid #26a26f
 }
 /*友情链接栏*/
 @media all and (max-width: 1320px){
     .link-box1 {flex-flow: wrap}
     .link-word1 {max-width: 20%;
-    flex:0 0 20%}
+    flex: 0 0 20%}
+}
+@media all and (max-width: 768px){
+    .link-word1 {max-width: 40%;
+    flex: 0 0 50%}
 }
 /*页尾部分*/
 footer {
@@ -493,4 +506,24 @@ footer {
 .bg-erweima {
     width: 92px; height: 92px;
     background: url('css_sprites8-2.png') -164px -10px;
+}
+.footer-box>p:hover {
+    border-bottom: 1px solid white;
+}
+.footer-box1>p:hover {
+    border-bottom: 1px solid white;
+}
+@media all and (max-width: 768px){
+    footer {flex-direction: column;}
+    .footer-box {
+        padding: 0;
+        min-width: 100%;
+        margin: 0.5rem 0}
+    .footer-box1 {
+        min-width: 100%;
+        margin: 0.5rem 0}
+    .footer-box2 {
+        min-width: 100%;
+        margin: 0.5rem 0
+    }
 }
