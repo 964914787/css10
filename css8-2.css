@@ -239,7 +239,7 @@ header .bg-weibo {
     text-indent:2em;
 }
 /*介绍框大分辨率布局*/
-@media all and (min-width: 768px){
+@media all and (min-width: 850px){
     .introduce-frame {width: 45.3%;
         flex: 1 0 auto;
         margin-left: 2.6rem;
@@ -254,7 +254,7 @@ header .bg-weibo {
         margin-left: 18%;
     }
 }
-@media all and (max-width: 768px){
+@media all and (max-width: 850px){
     .lntermediate-content {
         flex-wrap: wrap;
     }

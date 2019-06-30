@@ -193,13 +193,13 @@ header .bg-weibo {
 }
 .front-end-content {
     display: flex;
-
+    flex-wrap: wrap;
     margin: 4.8rem 18.75% 0 18.75%;
 }
 /*职业介绍框*/
 .career-introduction {
     flex: 0 1 31.83%;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
     border:1px solid #f6f6f6;
     border-radius: 10px;
 }
@@ -308,6 +308,7 @@ header .bg-weibo {
     position: absolute;
     background-color: black;
     width: 30.4rem;
+    height: 48.2rem;
     color: white;
     font-size: 1.6rem;
     opacity: 0;
@@ -320,10 +321,12 @@ header .bg-weibo {
 .career-introduction:hover .hover-box {
     opacity: 0.7;
 }
-@media all and (max-width: 1450px){
-    .front-end-content {
-        flex-wrap: wrap;
-    }
+@media all and (max-width: 1680px){
+    .front-end-content{margin-left: 25%}
+    .career-introduction {margin-top: 1rem;}
+}
+@media all and (max-width: 1356px) {
+    .front-end-content{justify-content: center}
 }
 /*页尾部分*/
 footer {
