@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <!--根据手机屏幕1:1显示的页面-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--引入bootstrap4-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!--引入外联css-->
+    <link rel="stylesheet" type="text/css" href="css10.css">
+    <link rel="stylesheet" type="text/css" href="重置样式表.css">
+    <title>Title</title>
+</head>
+<body>
+<!--页眉-->
+<header>
+    <div class="telephone">客服热线：010-594-78634</div>
+    <div class="box-flex">
+        <button class="header-button">登陆</button>
+        <button class="header-button">注册</button>
+    </div>
+</header>
+<!--导航栏-->
+<ul class="nav justify-content-end navigation">
+    <li class="nav-item">
+        <a class="nav-link active" href="#">首页</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">在线定制</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">标准箱</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="#">品质保障</a>
+    </li>
+</ul>
+<!--流程图-->
+<div class="flowchart">
+    <div class="flowchart-box">
+        <div class="flowchart-box-bg"></div>
+        <div class="flowchart-box-circular">1</div>
+        <div class="flowchart-box-word">1.定制纸箱</div>
+    </div>
+    <div class="flowchart-box" style="margin-left: -0.2rem">
+        <div class="flowchart-box-bg"></div>
+        <div class="flowchart-box-circular">2</div>
+        <div class="flowchart-box-word">2.选择数量</div>
+    </div>
+    <div class="flowchart-box" style="margin-left: -0.2rem">
+        <div class="flowchart-box-bg"></div>
+        <div class="flowchart-box-circular">3</div>
+        <div class="flowchart-box-word">3.上传附件</div>
+    </div>
+    <div class="flowchart-box" style="margin-left: -0.2rem">
+        <div class="flowchart-box-bg"></div>
+        <div class="flowchart-box-circular">4</div>
+        <div class="flowchart-box-word">4.确认下单</div>
+    </div>
+</div>
+<!--标题-->
+<div class="title">请您按照以下步骤来定制您的纸箱</div>
+<!--选择框-->
+<div class="selection-box">
+    <div class="box-type">
+        <div class="bg-box"></div>
+        <p>选择箱型</p>
+    </div>
+    <div class="radio-column">
+        <form action="" method="get" class="box-flex">
+            <input id="aa" name="Fruit" type="radio" value="" /><label for="aa" class="radio-column-input">&nbsp;&nbsp;对口箱 </label>
+            <input id="bb" name="Fruit" type="radio" value="" /><label for="bb" class="radio-column-input">&nbsp;&nbsp;飞机盒 </label>
+            <input id="cc" name="Fruit" type="radio" value="" /><label for="cc" class="radio-column-input">&nbsp;&nbsp;天地盖 </label>
+        </form>
+        <!-- Example split danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">查看详情</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">对口箱</a>
+                <a class="dropdown-item" href="#">飞机盒</a>
+                <a class="dropdown-item" href="#">天地盖</a>
+            </div>
+        </div>
+    </div>
+    <div class="box-type">
+        <div class="bg-ruler"></div>
+        <p>确定尺寸</p>
+    </div>
+    <div class="radio-column abc">
+        <form action="" method="get" class="box-flex flex-tuo">
+            <div class="box-flex flex-wrap ab">
+                <input id="a" type="radio" value="" /><label for="a" class="radio-column-input">&nbsp;&nbsp;外径</label>
+                <div class="input-width box-flex flex-center">
+                    <p>长</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+                <div class="input-width box-flex flex-center">
+                    <p>宽</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+                <div class="input-width box-flex flex-center">
+                    <p>高</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+            </div>
+            <div class="box-flex flex-wrap ab">
+                <input id="b" type="radio" value="" /><label for="b" class="radio-column-input">&nbsp;&nbsp;内径</label>
+                <div class="input-width box-flex flex-center">
+                    <p>长</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+                <div class="input-width box-flex flex-center">
+                    <p>宽</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+                <div class="input-width box-flex flex-center">
+                    <p>高</p>
+                    <input class="input-height" type="text" name="firstname" oninput = "value=value.replace(/[^\d]/g,'')">
+                    <p>mm</p>
+                </div>
+            </div>
+        </form>
+        <!-- Example split danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">查看详情</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">半径</a>
+                <a class="dropdown-item" href="#">内径</a>
+            </div>
+        </div>
+    </div>
+    <div class="box-type">
+        <div class="bg-cut"></div>
+        <p>选择材质</p>
+    </div>
+    <div class="radio-column">
+        <form action="" method="get" class="box-flex flex-wrap">
+            <input id="aaa" name="Fruit" type="radio" value="" /><label for="aaa" class="radio-column-input">&nbsp;&nbsp;三层A瓦优质</label>
+            <input id="bbb" name="Fruit" type="radio" value="" /><label for="bbb" class="radio-column-input">&nbsp;&nbsp;三层A瓦优质</label>
+            <input id="ccc" name="Fruit" type="radio" value="" /><label for="ccc" class="radio-column-input">&nbsp;&nbsp;三层A瓦优质</label>
+            <input id="ddd" name="Fruit" type="radio" value="" /><label for="ddd" class="radio-column-input">&nbsp;&nbsp;三层A瓦优质</label>
+            <input id="fff" name="Fruit" type="radio" value="" /><label for="fff" class="radio-column-input">&nbsp;&nbsp;三层A瓦优质</label>
+        </form>
+        <!-- Example split danger button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">查看详情</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">三层A瓦优质</a>
+                <a class="dropdown-item" href="#">三层A瓦优质</a>
+                <a class="dropdown-item" href="#">三层A瓦优质</a>
+            </div>
+        </div>
+    </div>
+    <div class="next-step">
+        <div class="next-step-up">下一步</div>
+    </div>
+</div>
+<footer>
+    <div class="footer-box">51包装网—纸箱包装首选服务平台</div>
+    <div class="flex-tuo">
+        <div class="footer-box">
+            <p>关于我们</p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>配送流程</p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>联系我们</p>
+        </div>
+        <div class="footer-box" style="margin-top: 2.2rem">
+            <p>下单指南</p>&nbsp;&nbsp;&nbsp;&nbsp;
+            <p>媒体介绍&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+
+    <div class="box-flex">
+        <div class="flex-tuo">
+            <div class="footer-box">   TEL：400-0000-000 </div>
+            <div class="footer-box" style="margin-top: 1.4rem">   企业QQ：123456789 </div>
+            <div class="footer-box" style="margin-top: 1.4rem">   微信号：XXXXXXX </div>
+        </div>
+        <div class="bg-erweima"></div>
+    </div>
+</footer>
+<div class="footer-button">北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015&nbsp;&nbsp;&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;京icp备99999999-1 </div>
+</body>
+</html>
